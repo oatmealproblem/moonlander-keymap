@@ -103,4 +103,47 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 
+// Custom QMK
+// use alt repeat to eliminate SFBs
+uint16_t get_alt_repeat_key_keycode_user(uint16_t keycode, uint8_t mods) {
+  switch (keycode) {
+    // col 1 (bnx)
+    case KC_B: return KC_N;
+    case KC_N: return KC_B;
+    case KC_X: return KC_B;
+    // col 2 (lrq)
+    case KC_L: return KC_R;
+    case KC_R: return KC_L;
+    case KC_Q: return KC_U;
+    // col 3 (dtm)
+    case KC_D: return KC_T;
+    case KC_T: return KC_M;
+    case KC_M: return KC_T;
+    // col 4 (csw)
+    case KC_C: return KC_S;
+    case KC_S: return KC_C;
+    case KC_W: return KC_S;
+    // col 5 (vgf)
+    case KC_V: return KC_S;
+    case KC_G: return KC_S;
+    case KC_F: return KC_S;
+    // col 6 (jpk)
+    case KC_J: return KC_Y;
+    case KC_P: return KC_H;
+    case KC_K: return KC_Y;
+    // col 7 (yhf)
+    case KC_Y: return KC_P;
+    case KC_H: return KC_Y;
+    case KC_F: return KC_Y;
+    // col 8 (oa')
+    case KC_O: return KC_A;
+    case KC_A: return KC_O;
+    // col 9 (ue;)
+    case KC_U: return KC_E;
+    case KC_E: return KC_U;
+    // col 10 (,i.)
+    // case KC_I: return KC_I;
+  }
 
+  return KC_TRNS;
+}
