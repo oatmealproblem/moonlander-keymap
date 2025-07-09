@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_GRAVE,       KC_N,           KC_R,           KC_T,           KC_S,           KC_G,           KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_P,           KC_H,           KC_A,           KC_E,           KC_I,           KC_BSPC,        
     KC_LEFT_SHIFT,  KC_X,           KC_Q,           KC_M,           KC_W,           KC_Z,                                           KC_K,           KC_F,           KC_QUOTE,       KC_SCLN,        KC_DOT,         KC_RIGHT_SHIFT, 
     KC_LEFT_CTRL,   KC_LEFT_ALT,    KC_LEFT_GUI,    KC_LEFT,        KC_RIGHT,       KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, KC_UP,          KC_DOWN,        KC_RIGHT_GUI,   KC_RIGHT_ALT,   KC_RIGHT_CTRL,  
-    KC_SPACE,       KC_ENTER,       KC_TRANSPARENT,                 KC_TRANSPARENT, KC_F23,         KC_F24
+    KC_SPACE,       KC_ENTER,       KC_TRANSPARENT,                 KC_TRANSPARENT, QK_ALT_REPEAT_KEY,         QK_REPEAT_KEY
   ),
 };
 
