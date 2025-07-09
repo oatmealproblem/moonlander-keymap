@@ -123,10 +123,10 @@ uint16_t get_alt_repeat_key_keycode_user(uint16_t keycode, uint8_t mods) {
     case KC_C: return KC_S;
     case KC_S: return KC_C;
     case KC_W: return KC_S;
-    // col 5 (vgf)
+    // col 5 (vgz)
     case KC_V: return KC_S;
     case KC_G: return KC_S;
-    case KC_F: return KC_S;
+    case KC_Z: return KC_S;
     // col 6 (jpk)
     case KC_J: return KC_Y;
     case KC_P: return KC_H;
